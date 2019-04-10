@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+  <meta charset="UTF-8">
+  <title>RMJ Homework 11 HTML, CSS and Bootsrap</title>
+
+    <!--Need to bring boostap styles  ut it breaks my styling when I do-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">Lattitude</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+                        <a class="dropdown-item" href="humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="#">Wind Speed</a>
+                    </div>
+                </li>                
+                <li class="nav-item">
+                    <a class="nav-link" href="comparison.html">Comparison</a>
+                </li>            
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Data</a>
+                </li>            
+            </ul>
+        </div>
+    </nav>
+
+
+ <!--#################################################################--> 
+
+       <main role="main" class="container"> <!-- Start Container 1-->
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="row"> <!-- Start row-->
+
+        <div class="col-md-8"> <!-- Start First Column width 8-->
+            <h1 class="mt-5">Cloudiness</h1>
+            <hr>
+            <div><img src="file:///C:/Users/kanta/Dropbox/04-Pandas/Week11Homework/images/latitude_clouds.png" class="mt-1 mb-5 img-responsive" width="100%" alt="one">
+            </div>
+            <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Interdum consectetur libero id faucibus nisl tincidunt. At auctor urna nunc id cursus metus aliquam eleifend mi. Aliquet eget sit amet tellus cras adipiscing enim. Neque volutpat ac tincidunt vitae semper quis lectus nulla.</p>
+            </div>
+        </div> <!-- /End First Column width 8-->
+
+        <div class="col-xs-4 col-md-4"> <!-- Start Visuals column width 4-->
+                <h1 class="mt-5">Visualizations</h1>
+                <hr>   
+            
+                <!-- divide the image into 2 colums and display side by side-->
+                <a href="temperature.html"><img src="file:///C:/Users/kanta/Dropbox/04-Pandas/Week11Homework/images/latitude_temp.png"  class="col-sm-4 pull-left img-responsive img-fluid" width="100%" alt="Max Temperatures"></a>
+
+                <a href="humidity.html"><img src="file:///C:/Users/kanta/Dropbox/04-Pandas/Week11Homework/images/latitude_humidity.png" class="col-sm-4 pull-left img-responsive img-fluid" width="100%"alt="Latitude versus Humidity"></a>
+                
+                <a href="cloudiness.html"><img src="file:///C:/Users/kanta/Dropbox/04-Pandas/Week11Homework/images/latitude_clouds.png" class="col-sm-4 pull-left img-responsive img-fluid" width="100%"  alt="Latitude versus Cloudiness"></a>
+
+                <a href="#"><img src="file:///C:/Users/kanta/Dropbox/04-Pandas/Week11Homework/images/latitude_windspeed.png" class="col-sm-4 pull-left img-responsive img-fluid" width="100%" alt="Latitude versus Wind Speed"></a>
+        </div><!-- /end visuals column-->
+
+      </div> <!-- /end row-->
+ 
+    </main> <!-- /end container 1-->
+
+ <!--#################################################################--> 
+
+    <footer class="footer">
+      <div class="footercontainer">
+        <span class="text-muted">Ruth Mary's Web Page Homework Week 11</span>
+      </div>
+    </footer>  
+
+</body>
+</html>
