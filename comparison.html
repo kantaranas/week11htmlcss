@@ -16,6 +16,7 @@
 
 <body>
 
+    <!-- Start navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">Lattitude</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,25 +24,29 @@
         </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="temperature.html">Max Temperature</a>
-                        <a class="dropdown-item" href="humidity.html">Humidity</a>
-                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-                        <a class="dropdown-item" href="#">Wind Speed</a>
-                    </div>
-                </li>                
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Comparison</a>
-                </li>            
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Data</a>
-                </li>            
-            </ul>
-        </div>
+        <ul class="navbar-nav mr-auto w-100 justify-content-end">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="temperature.html">Max. Temperature</a>
+            <a class="dropdown-item" href="humidity.html">Humidity</a>
+            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="comparison.html">Comparison</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+        </li>
+
+        </ul>
+    </div>
     </nav>
+    <!-- /end navbar -->
 
 
  <!--#################################################################--> 
@@ -53,37 +58,45 @@
                     <hr> 
                 </div> 
                 <div class="col-xs-12 col-md-12"> <!-- Start Second column width 4-->
-                    <p>Click on any plot to learn more</p>
+                    <p>Click on any plot to view the analysis.</p>
                 </div>       
     
                 <!-- divide the image into 2 colums and display side by side-->
                 <div class="col-md-6 pull-left">
                 <h3 class="mt-5">vs Max Temperature</h3>
-                <a href="temperature.html"><img src="file:///C:/Users/kanta/Dropbox/04-Pandas/Week11Homework/images/latitude_temp.png" width="432" height="288" alt="Max Temperatures"></a>
+                <a href="temperature.html"><img src="file:///C:/Users/kanta/Dropbox/04-Pandas/Week11Homework/images/latitude_temp.png" class="w-100 m-2" alt="Max Temperatures"></a>
 
                 <h3 class="mt-5">vs Humidity</h3>
-                <a href="humidity.html"><img src="file:///C:/Users/kanta/Dropbox/04-Pandas/Week11Homework/images/latitude_humidity.png" width="432" height="288" alt="Latitude versus Humidity"></a>
+                <a href="humidity.html"><img src="file:///C:/Users/kanta/Dropbox/04-Pandas/Week11Homework/images/latitude_humidity.png" class="w-100 m-2" alt="Latitude versus Humidity"></a>
                 </div>
 
                 <!-- divide the image into 2 colums and display side by side-->
                 <div class="col-md-6 pull-left">
                 
                 <h3 class="mt-5">vs Cloudiness</h3>
-                <a href="cloudiness.html"><img src="file:///C:/Users/kanta/Dropbox/04-Pandas/Week11Homework/images/latitude_clouds.png" width="432" height="288"  alt="Latitude versus Cloudiness"></a>
+                <a href="cloudiness.html"><img src="file:///C:/Users/kanta/Dropbox/04-Pandas/Week11Homework/images/latitude_clouds.png" class="w-100 m-2" alt="Latitude versus Cloudiness"></a>
 
                 <h3 class="mt-5">vs Wind Speed</h3>
-                <a href="#"><img src="file:///C:/Users/kanta/Dropbox/04-Pandas/Week11Homework/images/latitude_windspeed.png" width="432" height="288" alt="Latitude versus Wind Speed"></a>
+                <a href="#"><img src="file:///C:/Users/kanta/Dropbox/04-Pandas/Week11Homework/images/latitude_windspeed.png" class="w-100 m-2" alt="Latitude versus Wind Speed"></a>
                 </div>
         </div>
     </main> <!-- /end container 1-->
 
  <!--#################################################################--> 
 
-    <footer class="footer">
-      <div class="footercontainer">
-        <span class="text-muted">Ruth Mary's Web Page Homework Week 11</span>
-      </div>
-    </footer>    
+    <footer class="container-fluid text-center">
+        <div class="container">
+        <p>Ruth Mary's Web Page Homework Week 11</p>
+        </div>  
+    </footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 
 
 </body>
